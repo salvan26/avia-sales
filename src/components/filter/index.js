@@ -1,4 +1,4 @@
-/* eslint-disable prettier/prettier *//* eslint-disable linebreak-style */
+/* eslint-disable prettier/prettier */ /* eslint-disable linebreak-style */
 
 import Filter from './filter';
 

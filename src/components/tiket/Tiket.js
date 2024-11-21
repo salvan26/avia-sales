@@ -1,4 +1,4 @@
-/* eslint-disable linebreak-style *//* eslint-disable prettier/prettier */
+/* eslint-disable linebreak-style */ /* eslint-disable prettier/prettier */
 
 import React from 'react';
 import { nanoid } from 'nanoid';
@@ -18,8 +18,8 @@ const Ticket = ({ ticket }) => {
       default: {
         const hours = Math.floor(mins / 60);
         duration = `${hours}ч ${mins - hours * 60}м`;
+      }
     }
-}
     return duration;
   };
 

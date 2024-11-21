@@ -1,4 +1,4 @@
-/* eslint-disable linebreak-style *//* eslint-disable prettier/prettier */
+/* eslint-disable linebreak-style */ /* eslint-disable prettier/prettier */
 import React from 'react';
 
 import classes from './logo.module.scss';

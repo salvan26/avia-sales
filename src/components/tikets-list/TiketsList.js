@@ -1,4 +1,4 @@
-/* eslint-disable linebreak-style *//* eslint-disable prettier/prettier */
+/* eslint-disable linebreak-style */ /* eslint-disable prettier/prettier */
 
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
