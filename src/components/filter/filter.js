@@ -44,7 +44,11 @@ const Filter = () => {
     <section className={classes['app__sorting-elements']}>
       <p className={classes['app__sorting-header']}>Колличество пересадок</p>
       <section className={classes['app__sorting-header']}>
-        <Checkbox onChange={handleSortAll} checked={sortAll || (sortWithout && sortOne && sortTwo && sortThree)}>
+        <Checkbox
+          className={classes['checkbox-style']}
+          onChange={handleSortAll}
+          checked={sortAll || (sortWithout && sortOne && sortTwo && sortThree)}
+        >
           Все
         </Checkbox>
         <Checkbox onChange={handleSortWithout} checked={sortWithout}>

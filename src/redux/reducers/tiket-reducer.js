@@ -32,17 +32,27 @@ const searchIdSlice = createSlice({
   },
 });
 
-const fetchTickets = async (id, rejectedWithValue) => {
+const fetchTickets = async (id, rejectedWithValue, stop = false) => {
+  if (stop) {
+    return { tickets: [], stop: true };
+  }
+
   try {
     const responseTickets = await fetch(`https://aviasales-test-api.kata.academy/tickets?searchId=${id}`);
+
     if (!responseTickets.ok) {
       throw new Error('нет запроса');
     }
+
     const data = await responseTickets.json();
-    return data;
+
+    return {
+      tickets: data.tickets,
+      stop: data.stop || false,
+    };
   } catch (error) {
     if (error.message === 'нет запроса' || error.status === 500) {
-      return fetchTickets(id);
+      return fetchTickets(id, rejectedWithValue);
     }
     return rejectedWithValue(error);
   }

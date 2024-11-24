@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */ /* eslint-disable linebreak-style */
 
 import React from 'react';
-import { Flex, Radio } from 'antd';
+import { Radio } from 'antd';
 import { useSelector, useDispatch } from 'react-redux';
 
 import * as reducers from '../../redux/reducers/tiket-reducer';
@@ -10,12 +10,12 @@ import classes from './tabs.module.scss';
 
 const options = [
   {
-    label: 'Самый дешевый',
-    value: 'Самый дешевый',
+    label: 'САМЫЙ ДЕШЁВЫЙ',
+    value: 'САМЫЙ ДЕШЁВЫЙ',
   },
   {
-    label: 'Самый быстрый',
-    value: 'Самый быстрый',
+    label: 'САМЫЙ БЫСТРЫЙ',
+    value: 'САМЫЙ БЫСТРЫЙ',
   },
 ];
 const Tabs = () => {
@@ -36,11 +36,11 @@ const Tabs = () => {
     }
   };
   return (
-    <Flex vertical gap="middle" className={classes.app__filter}>
+    <div className={classes.app__filter}>
       <Radio.Group
         block
         options={options}
-        defaultValue="Самый дешевый"
+        defaultValue="САМЫЙ ДЕШЁВЫЙ"
         optionType="button"
         buttonStyle="solid"
         onChange={onChangeFilter}
@@ -51,7 +51,7 @@ const Tabs = () => {
           <p className={classes.info}>Search tickets...</p>
         </div>
       ) : null}
-    </Flex>
+    </div>
   );
 };
 export default Tabs;
