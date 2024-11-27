@@ -66,10 +66,11 @@
             background-color: #F1FCFF;
             width: 100%;
         }
+       
         .ant-checkbox-checked .ant-checkbox-inner::after{
             border-color: #2196F3;  
         }
-        .ant-checkbox-wrapper .ant-checkbox-checked .ant-checkbox-inner:hover{
+        .ant-checkbox-wrapper .ant-checkbox-inner:hover{
             background-color: black;
             text-align: center;   
         }
@@ -77,5 +78,8 @@
             border-color: #9ABBCE;
             height: 20px;
             width: 20px;
+        }
+        .ant-checkbox-wrapper:hover .ant-checkbox-checked .ant-checkbox-inner::after {
+        border-color: #FFFFFF; 
         }
     }

@@ -18,7 +18,7 @@ const TicketList = () => {
   const sortTwo = useSelector((state) => state.tickets.sortTwo);
   const sortThree = useSelector((state) => state.tickets.sortThree);
   const dispatch = useDispatch();
-  const tickets = useSelector((state) => state.tickets.tickes);
+  const tickets = useSelector((state) => state.tickets.tickets);
   const stop = useSelector((state) => state.tickets.stop);
   const { searchId } = useSelector((state) => state.searchId);
   const arrayTickets = useSelector((state) => state.tickets.arrayTickets);
